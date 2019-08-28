@@ -76,7 +76,7 @@ public class Olaylar extends Fragment{
         protected Void doInBackground(String... strings) {
             try {
                 document=Jsoup.connect(strings[0]).get();
-                elements=document.select("li.event-list__item");
+                elements=document.select("li.event");
                 ay=document.select("span.month");
                 gun=document.select("span.date");
             }catch (Exception e){

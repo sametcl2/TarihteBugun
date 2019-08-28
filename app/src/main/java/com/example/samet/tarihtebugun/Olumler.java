@@ -73,7 +73,7 @@ public class Olumler extends Fragment {
         protected Void doInBackground(String... strings) {
             try {
                 org.jsoup.nodes.Document document=Jsoup.connect(strings[0]).get();
-                elements=document.select("li.event-list__item");
+                elements=document.select("li.person");
             } catch (IOException e) {
                 Snackbar.make(view.findViewById(R.id.layout),"Bir sorun oluştu",Snackbar.LENGTH_LONG).show();
             }
